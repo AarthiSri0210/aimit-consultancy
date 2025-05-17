@@ -511,9 +511,9 @@ section {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .about-section {
+  .about {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     padding: 40px 5%;
   }
 
@@ -528,7 +528,9 @@ section {
   }
 
   .about-image img {
+    height: auto;              /* Let it scale naturally */
     max-width: 100%;
+    margin-left: 0;            /* Remove negative margin */
   }
 }
 
