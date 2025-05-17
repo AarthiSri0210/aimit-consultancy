@@ -18,23 +18,42 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <a href="#home" class="logo">
-        <img src="images/logo.png" alt="AimIt Overseas Logo" />
-      </a>
-    </div>
-  
-    <div class="menu-wrapper">
-      <a href="#home" class="nav-item">Home</a>
-      <a href="#about" class="nav-item">About</a>
-      <a href="#services" class="nav-item">Services</a>
-      <a href="#destinations" class="nav-item">Destinations</a>
-      <a href="#testimonials" class="nav-item">Testimonials</a>
-      <a href="#contact" class="nav-item">Contact</a>
-      <a href="#contact" class="get-started-btn">Get Started  &gt;</a>
-    </div>
-  </header>
+  <!-- Header -->
+<header class="header">
+  <div class="logo-container">
+    <a href="#home" class="logo">
+      <img src="images/logo.png" alt="AimIt Overseas Logo" />
+    </a>
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <!-- Navigation Menu (Desktop) -->
+  <div class="menu-wrapper">
+    <a href="#home" class="nav-item">Home</a>
+    <a href="#about" class="nav-item">About</a>
+    <a href="#services" class="nav-item">Services</a>
+    <a href="#destinations" class="nav-item">Destinations</a>
+    <a href="#testimonials" class="nav-item">Testimonials</a>
+    <a href="#contact" class="nav-item">Contact</a>
+    <a href="#contact" class="get-started-btn">Get Started &gt;</a>
+  </div>
+
+  <!-- Sidebar (Mobile) -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#destinations" onclick="toggleMenu()">Destinations</a>
+    <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#contact" class="get-started-btn">Get Started &gt;</a>
+  </div>
+</header>
+
 
   <section class="hero">
     <div class="hero-content">
@@ -432,7 +451,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-about">
-        <img src="logo.png" alt="Aimit Logo" class="footer-logo" />
+        <img src="images/logo.png" alt="Aimit Logo" class="footer-logo" />
         <p>
           Your trusted partner for overseas education. We help students achieve their dreams of studying abroad with personalized guidance and support.
         </p>
