@@ -18,42 +18,38 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <body>
-  <!-- Header -->
-<header class="header">
-  <div class="logo-container">
-    <a href="#home" class="logo">
-      <img src="images/logo.png" alt="AimIt Overseas Logo" />
-    </a>
-  </div>
-
-  <!-- Hamburger Icon -->
-  <div class="hamburger" onclick="toggleMenu()">
-    &#9776;
-  </div>
-
-  <!-- Navigation Menu (Desktop) -->
-  <div class="menu-wrapper">
-    <a href="#home" class="nav-item">Home</a>
-    <a href="#about" class="nav-item">About</a>
-    <a href="#services" class="nav-item">Services</a>
-    <a href="#destinations" class="nav-item">Destinations</a>
-    <a href="#testimonials" class="nav-item">Testimonials</a>
-    <a href="#contact" class="nav-item">Contact</a>
-    <a href="#contact" class="get-started-btn">Get Started &gt;</a>
-  </div>
-
-  <!-- Sidebar (Mobile) -->
-  <div class="mobile-sidebar" id="mobileSidebar">
-    <a href="#home" onclick="toggleMenu()">Home</a>
-    <a href="#about" onclick="toggleMenu()">About</a>
-    <a href="#services" onclick="toggleMenu()">Services</a>
-    <a href="#destinations" onclick="toggleMenu()">Destinations</a>
-    <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
-    <a href="#contact" onclick="toggleMenu()">Contact</a>
-    <a href="#contact" class="get-started-btn">Get Started &gt;</a>
-  </div>
-</header>
-
+  <header class="header">
+    <div class="logo-container">
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="AimIt Overseas Logo" />
+      </a>
+    </div>
+  
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  
+    <!-- Navigation Menu for Desktop -->
+    <div class="menu-wrapper">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#services" class="nav-item">Services</a>
+      <a href="#destinations" class="nav-item">Destinations</a>
+      <a href="#testimonials" class="nav-item">Testimonials</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <a href="#contact" class="get-started-btn">Get Started &gt;</a>
+    </div>
+  
+    <!-- Sidebar for Mobile -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <a href="#home" onclick="toggleMenu()">Home</a>
+      <a href="#about" onclick="toggleMenu()">About</a>
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#destinations" onclick="toggleMenu()">Destinations</a>
+      <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+      <a href="#contact" class="get-started-btn" onclick="toggleMenu()">Get Started &gt;</a>
+    </div>
+  </header>  
 
   <section class="hero">
     <div class="hero-content">
@@ -64,7 +60,7 @@
         AimIt Overseas helps students achieve their dreams of studying abroad with personalized guidance, university selection, and visa support.
       </p>
       <div class="hero-buttons">
-        <a href="#consultation" class="btn primary-btn">Get Free Consultation</a>
+        <a href="#contact" class="btn primary-btn">Get Free Consultation</a>
         <a href="#services" class="btn secondary-btn">Explore Services</a>
       </div>
     </div>
@@ -315,7 +311,6 @@
   </section>  
 
   <section class="testimonials-section" id="testimonials">
-    <h5 class="subtitle">Success Stories</h5>
     <h2 class="section-title">What Our Students Say</h2>
     <p class="section-description">
       Hear from students who achieved their international education dreams with our support.
@@ -504,14 +499,14 @@
       </div>
     </div>
   </footer>
-
+  
   <script>
-  function toggleMenu() {
-    const sidebar = document.getElementById("mobileSidebar");
-    sidebar.style.display = sidebar.style.display === "block" ? "none" : "block";
-  }
-</script>
-
+    function toggleMenu() {
+      const sidebar = document.getElementById("mobileSidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>  
+  
   <!-- Add this before </body> -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
